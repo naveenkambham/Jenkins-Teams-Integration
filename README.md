@@ -20,7 +20,7 @@ Follow these steps to set up Jenkins and Microsoft Teams integration:
     * Go to Post-build Actions and Add "Flexbile Publish".
     * Flexible Publish -> Configure Conditional Actions to ("Success" in the Worst and Best Status cases)
     * Flexible Publish  -> Configure Action with Webhook URL and Set the mode to "POST" and select Yes for Ignore SSL errors
-         * Click Advanced inside Action to include the payload and configure the settings 
+         * Click Advanced inside Action to include the payload and configure the settings as 
          * Authenticate: None
          * Use system properties: No
          * Headers -> Accept : NOT_SET
