@@ -31,3 +31,7 @@ Follow these steps to set up Jenkins and Microsoft Teams integration:
     * Repeat the same steps for Build Failure cases
     * Click Save and Trigger the Jenkins Build 
 4.  Debugging: Webhook logs can be viewed inside MS Teams -> Workflows -> Created Webhook     
+5.  Build Report Details: Using various Jenkins environment variables such as JOB_URL, JOB_NAME, BUILD_NUMBER build details can be composed in MS Teams Adaptive cards and pass to Teams channel
+     * Build Report URL can be composed using JOB_URL, BUILD_NUMBER
+     * Sometimes JOB_URL may be pointed to local host, in that case navigate to Dashboard -> Manage Jenkins -> System -> Jenkins URL and update the Jenins server URL accordingly
+     * BUILD_USER is not available by default. Installing Jenkins Plugin named "Build User Vars" sets the user details.   
