@@ -19,7 +19,7 @@
                     ,
                   {
                  "type": "TextBlock",
-                 "text": "Test Report: [${JOB_URL}/${BUILD_NUMBER}/](${JOB_URL}/${BUILD_NUMBER}/)",
+                 "text": "Build Report: [${JOB_URL}/${BUILD_NUMBER}/](${JOB_URL}/${BUILD_NUMBER}/)",
                  "size": "large",
                  "color":"accent",
                  "underline":"true"
