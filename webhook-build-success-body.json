@@ -1,0 +1,58 @@
+{
+    "type":"message",
+    "attachments":[
+       {
+          "contentType":"application/vnd.microsoft.card.adaptive",
+          "contentUrl":null,
+          "content":{
+             "$schema":"http://adaptivecards.io/schemas/adaptive-card.json",
+             "type":"AdaptiveCard",
+             "version":"1.2",
+             "body":[
+                 {
+                 "type": "TextBlock",
+                 "text": "Build Success \u2713",
+                  "size": "large",
+                  "color":"good"
+                
+                 }
+                    ,
+                  {
+                 "type": "TextBlock",
+                 "text": "Test Report: [${JOB_URL}/${BUILD_NUMBER}/](${JOB_URL}/${BUILD_NUMBER}/)",
+                 "size": "large",
+                 "color":"accent",
+                 "underline":"true"
+                 },
+                 {
+                 "type": "TextBlock",
+                 "text": "Build Triggered by: ${BUILD_USER}",
+                 "size": "medium",
+                 "color":"accent",
+                 "underline":"true"
+                 },
+                 
+                {
+                  "type": "FactSet",
+                  "facts": [
+                {
+                  "title": "Jenkins Job Name:",
+                  "value": "${JOB_NAME}"
+                 }
+                , 
+                 {
+                     "title": "Build Number:",
+                     "value": "${BUILD_NUMBER}"
+                  },
+                 {
+                  "title": "Job URL:",
+                  "value": "${JOB_URL}"
+                 }
+              ]
+            }
+
+             ]
+          }
+       }
+    ]
+ }
